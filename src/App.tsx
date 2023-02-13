@@ -310,7 +310,7 @@ function App() {
 									)}
 									{message.type === "image" && (
 										<div>
-											<p>서경: </p>
+											<p>{(socket.auth as any).username}: </p>
 											<img
 												style={{ objectFit: "contain" }}
 												width={200}
